@@ -136,9 +136,9 @@ Instructions:
 
 - Make sure to change only the ‘datasetPath’ and ’seqmapPath’ accordingly which acts as the paths to mount to Pipetuner Docker container.
 
-       egs: **seqmapPath**: "data/sample_utils/sample_all.txt” 
+       egs: **seqmapPath** : "data/sample_utils/sample_all.txt” 
 
-        **datasetPath: "data/sample_videos”**
+            **datasetPath** : "data/sample_videos”
 
 ### **Custom Resolution support**
 
