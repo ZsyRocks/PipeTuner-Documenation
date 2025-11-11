@@ -22,7 +22,7 @@ Note that PipeTuner still only has one version which is 1.0.
 | CUDA 12.2 | GPU acceleration and compute in DeepStream 7.0 Container |
 | MOTA format Data | Ground truth in MOTA data format |
 
-Before continuing. install pipetuner first.
+Before continuing, install pipetuner first.
 
 ## 📥 Step-by-Step Instructions:
 
@@ -60,7 +60,7 @@ sudo gedit /'your_path'/pipe-tuner-sample/configs/config_PipeTuner/pipetuner_con
 
 Instructions:
 
-- Make sure to change only the ‘pgiePath’ and ’trackerPath’ accordingly which acts as the paths to mount to Pipetuner Docker container.
+- Make sure to change only the ‘streamRes’, ‘pgiePath’ and ’trackerPath’ accordingly which acts as the paths to mount to Pipetuner Docker container.
 
        eg: config/config_PGIE/’your_pgie_file’.txt
 
@@ -100,7 +100,7 @@ You tracker_output folder will look like this
 
 ![image.png](image%201.png)
 
-In **‘00_001_000003.txt’**,  the  **‘001’**represents the source number of the stream and the **‘000003’** represents the frame number. 
+In **‘00_001_000003.txt’**,  the  **‘001’** represents the source number of the stream and the **‘000003’** represents the frame number. 
 
 Now use the **‘KITTI_TO_MOT.py’** file to convert the **KITTI** tracker output files to **one MOT gt.txt** format which pipetuner requires.
 
