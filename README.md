@@ -62,7 +62,7 @@ Instructions:
 
 - Make sure to change only the ‘streamRes’, ‘pgiePath’ and ’trackerPath’ accordingly which acts as the paths to mount to Pipetuner Docker container.
 
-       eg: config/config_PGIE/’your_pgie_file’.txt
+       eg: pgiePath: config/config_PGIE/‘your_pgie_file’.txt
 
 Copy the contents of the ‘config_infer_primary_custom.txt’ and paste it inside
 
@@ -74,7 +74,7 @@ Instructions:
 
 - Make sure that the ‘onnx-model-file’, ’labelfile_path’, ‘model-engine-file’ and ‘custom-lib-path’ points correctly to the  path specified in the file which acts as the paths to mount to Pipetuner Docker container.
 
-        eg: move your onnx model to /’your_path’/pipe-tuner-sample/models/best_b4.onnx
+        eg: move your onnx model to /‘your_path’/pipe-tuner-sample/models/best_b4.onnx
 
 ### Custom Data preparation
 
@@ -136,9 +136,9 @@ Instructions:
 
 - Make sure to change only the ‘datasetPath’ and ’seqmapPath’ accordingly which acts as the paths to mount to Pipetuner Docker container.
 
-       egs: **seqmapPath** : "data/sample_utils/sample_all.txt” 
+       egs: seqmapPath : "data/sample_utils/sample_all.txt” 
 
-            **datasetPath** : "data/sample_videos”
+            datasetPath : "data/sample_videos”
 
 ### **Custom Resolution support**
 
