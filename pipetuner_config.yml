@@ -51,15 +51,15 @@ processing:
         containerImageID: "container_deepstream" # DeepStream container ID (automatically overwritten with an available container after launching)
         rootPath: "/media/sdb/pipe-tuner-sample/" # sample data root path (automatically overwritten with the actual sample data root path after launching)
  
-        # # pipeline config files
-        # dsAppPath: "configs/config_GuiTool/config_GuiTool_template_trackeval.yml" # pipeline execution and evaluation config file
-        # pgiePath: "configs/config_PGIE/config_infer_rtdetr.txt" # PGIE config file
-        # trackerPath: "configs/config_Tracker/config_tracker_default.yml" # tracker config file
- 
         # pipeline config files
         dsAppPath: "configs/config_GuiTool/config_GuiTool_template_trackeval.yml" # pipeline execution and evaluation config file
-        pgiePath: "configs/config_PGIE/config_infer_primary_PeopleNet_ResNet34.txt" # PGIE config file
+        pgiePath: "configs/config_PGIE/config_infer_primary_custom.txt" # PGIE config file
         trackerPath: "configs/config_Tracker/config_tracker_default.yml" # tracker config file
+ 
+        # # pipeline config files
+        # dsAppPath: "configs/config_GuiTool/config_GuiTool_template_trackeval.yml" # pipeline execution and evaluation config file
+        # pgiePath: "configs/config_PGIE/config_infer_primary_PeopleNet_ResNet34.txt" # PGIE config file
+        # trackerPath: "configs/config_Tracker/config_tracker_default.yml" # tracker config file
  
         # # Provided Dataset info
         # datasetPath: "data/SDG_1min_videos"
